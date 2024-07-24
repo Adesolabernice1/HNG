@@ -1,0 +1,12 @@
+[Unit]
+Description=DevOps Fetch Monitoring Service
+After=network.target
+
+[Service]
+ExecStart=/var/log/devopsfetch.sh
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
+
